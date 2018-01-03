@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TwitterApp</string>
+    <string name="login_label">Connect to Twitter</string>
+    <string name="title_activity_timeline">Your Timeline</string>
+    <string name="title_activity_tweet_details">Tweet Details</string>
+    <string name="user_header_name">\@header name</string>
+    <string name="tweet_text">tweet_text</string>
+    <string name="clockfortweet">clock for tweet</string>
+    <string name="reweet_count">23</string>
+    <string name="favorites_count">42</string>
+    <string name="user_name">user name</string>
+    <string name="compose_tweet_hint">What\'s going on?</string>
+    <string name="update_status">Tweet</string>
+    <string name="characters_left">140</string>
+    <string name="created_at_relative">10m</string>
+    <string name="tweet_id">-1</string>
+</resources>

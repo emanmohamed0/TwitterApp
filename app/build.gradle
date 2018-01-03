@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.example.modern23.twitterapp"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    jcenter()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.0.6'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.0.6'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.0.6'
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.loopj.android:android-async-http:1.4.8'
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.makeramen:roundedimageview:2.2.0'
+    compile 'org.ocpsoft.prettytime:prettytime:3.1.0.Final'
+    compile files('libs/codepath-utils.jar')
+    compile files('libs/codepath-oauth-0.4.1.jar')
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/scribe-codepath-0.0.3.jar')
+}
